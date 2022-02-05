@@ -2,7 +2,7 @@
 
 ## Summary
 
-Implementation of software boot-to-bootloader reset via USB (CDC) on an Atmel SAMD21G18. Arduino-core also implements this, but this is useful if you don't want to use Arduino libraries just for this feature (e.g. for a custom board). Also implements some other necesities such as a `printf_cdc` and simple console for reading newline terminated ascii strings from the virtual serial port (CDC).
+Implementation of soft reboot via USB and CDC virtual serial port on an Atmel SAMD21G18. Arduino-core also implements this, but this is useful if you don't want to use Arduino libraries just for this feature (e.g. for a custom board). Also implements some other necesities such as a `printf_cdc` and simple console for reading newline terminated ascii strings from the virtual serial port (CDC).
 
 ## ASF Project
 `samd21_usbcdc_reboot` is a bare-bones ASF project for the SAMD21G18 with the following modifications and additions:
