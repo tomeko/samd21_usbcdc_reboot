@@ -16,7 +16,7 @@ Implementation of soft reboot via USB and CDC virtual serial port on an Atmel SA
 All of this config is in the project in the repo. If you're doing this from scratch as an ASF project, you can use the notes below
 
   - Add `.text=0x2000` to the FLASH segment in the linker script (Linker config in Atmel Studio or your Makefile)
-  - Set up the 48Mhz GCLK needed for USB (hpl_gclk_config.h or the via the image below)
+  - Set up the 48Mhz GCLK needed for USB ([`hpl_gclk_config.h`](https://github.com/tomeko/samd21_usbcdc_reboot/blob/main/samd21_usbcdc_reboot/samd21_usbcdc_reboot/Config/hpl_gclk_config.h) or the via the image below)
   
 Snapshots of the ASF config if you prefer to set it up that way:
 
@@ -46,7 +46,7 @@ This is an 8Kb bootloader, so if you use a different (smaller) one just remember
 
 ## VID/PID/String description
 
-By default your virtual serial port will enumerate with a text summary like `ATMEL_CDC_ASF_EXAMPLE`. If you want to change the text summary to something else, check the strings definitions in `usb/class/cdc/device/atmel_devices_cdc.inf:161`.
+By default your virtual serial port will enumerate with a text summary like `ATMEL_CDC_ASF_EXAMPLE`. If you want to change the text summary to something else, check the strings definitions in [`usb/class/cdc/device/atmel_devices_cdc.inf`](https://github.com/tomeko/samd21_usbcdc_reboot/blob/14a948a4ab24b112e6a1826881f506f4e7e8e236/samd21_usbcdc_reboot/samd21_usbcdc_reboot/usb/class/cdc/device/atmel_devices_cdc.inf#L161).
 
 
 
