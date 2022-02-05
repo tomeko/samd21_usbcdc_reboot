@@ -34,7 +34,7 @@ Snapshots of the ASF config if you prefer to set it up that way:
 
 ## Bootloader
 
-Since I used a SAMD21 I used the [arduino-core bootloader](https://github.com/arduino/ArduinoCore-samd/tree/master/bootloaders/zero) for the MK-Zero board. 
+Since I used a SAMD21 I used the [ArduinoCore-samd bootloader](https://github.com/arduino/ArduinoCore-samd/tree/master/bootloaders/zero) for the MK-Zero board. 
 
 You need to make some small changes in the `Makefile`:
   - add `CRYSTALLESS` to the extra definitions.
