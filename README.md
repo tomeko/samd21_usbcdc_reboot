@@ -5,7 +5,7 @@
 Implementation of soft reboot via USB and CDC virtual serial port on an Atmel SAMD21G18. [ArduinoCore-samd](https://github.com/arduino/ArduinoCore-samd) also implements this in its own way, but this is useful if you don't want to use Arduino libraries (e.g. for a custom board). Also implements some other necesities such as a `printf_cdc` and simple console for reading newline terminated ascii strings from the virtual serial port (CDC).
 
 ## ASF Project
-`samd21_usbcdc_reboot` is a bare-bones ASF project for the SAMD21G18 with the following modifications and additions:
+`samd21_usbcdc_reboot` is a bare-bones AtmelStudio ASF project for the SAMD21G18 with the following modifications and additions:
 
   - USB callbacks for checking for DTR/1200bps
   - Custom reset function starts at flash segment `0x2000` (see Bootloader section below)
